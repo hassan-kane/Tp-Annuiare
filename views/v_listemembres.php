@@ -13,10 +13,12 @@
             echo '<tr>';
             echo '<td>'.  $valeur['id'] . '</td>';
             echo '<td>'.  $valeur['nom'] . '</td>';
-            echo '<td>'.  $valeur['prenom'] . '</td>';            
+            echo '<td>'.  $valeur['prenom'] . '</td>';
+
             echo '<td width=340>';
+            echo '<a class="btn btn-primary" href="index.php?uc=gerer&action=modifier&id='.$valeur['id'].'"><span class="bi-pencil"></span> Modifier</a>';
+            echo ' ';
             echo '<a class="btn btn-danger" href="index.php?uc=gerer&action=supprimer&id='.$valeur['id'].'"><span class="bi bi-x-circle"></span> Supprimer</a>';
-                                    // index.php?controle=c_admin_modifier&action=modifierAdherantC&idAdherant=
             echo '</tr>';
         }
         ?>
@@ -26,4 +28,5 @@
 <ul>
     <li><a href='index.php'>retour accueil</a></li>
 </ul>
+
 

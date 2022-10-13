@@ -6,8 +6,13 @@
     <li class="nav-item">
         <a class="nav-link" href="index.php?uc=gerer&action=saisir">Saisir un nouveau membre</a>
     </li>
+    
     <li class="nav-item">
         <a class="nav-link" href="index.php?uc=gerer&action=lister">Lister les membres</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="index.php?uc=gerer&action=demandeConnexion">Connexion</a>
     </li>
 </ul>
     </nav>

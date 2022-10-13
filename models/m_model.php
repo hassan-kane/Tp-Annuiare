@@ -72,4 +72,18 @@ class PdoBridge
         $sql = "DELETE FROM `membres` WHERE id = $id";
         $req = PdoBridge::$monPdo->exec($sql);
     }
+
+    public function modifier($id, $nom, $prenom) {
+        $sql = "UPDATE `membres` SET `nom`='$nom',`prenom`='$prenom' WHERE id = $id";
+        $req = PdoBridge::$monPdo->exec($sql);
+    }
+
+    public function getInfosVisiteur($login, $mdp){
+        $req = "select * from admins where login='$login' and mdp='$mdp'";
+        $rs = PdoBridge::$monPdo->query($req);
+        $ligne = $rs->fetch();
+        return $ligne;
+    }
+
+    
 }
